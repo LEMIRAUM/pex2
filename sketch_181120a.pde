@@ -173,7 +173,7 @@ class Button extends Point
     fill(255);    ellipse(1850, 951, 35, 35);
     fill(0);
     pushMatrix();  translate(1850, 951);  rotate((float)-1 / 4 * PI);
-    triangle((float)-21.25, 10, (float)-31.25, 0, (float)-11.25, 0);  popMatrix(); 
+    triangle((float)(-1 * 21.25), 10, (float)(-1 * 31.25), 0, (float)(-1 * 11.25), 0);  popMatrix(); 
   }
   public void press_check(int temp_x)
   {
@@ -217,7 +217,7 @@ class Snow
   float x, y, vx, vy, v, r;
   
   public Snow() {
-    x = (int)random(2000) + 50;  y = -20;  vx = random(0.5) + 0.1;  vy = random(1) + 0.5;  v = (int)random(100) + 125;  r = (int)random(10) + 20;
+    x = (float)((int)random(2000) + 50);  y = (float)(-1 * 20);  vx = random(0.5) + 0.1;  vy = random(1) + 0.5;  v = (float)((int)random(100) + 125);  r = (float)((int)random(10) + 20);
   }
   public void snow_draw()
   {
@@ -227,7 +227,7 @@ class Snow
   public void move()
   {
     if(y > 1085) {
-      x = (int)random(2000) + 50;  y = -20;  vx = random(0.1) + 0.1;  vy = random(1) + 0.5;  v = (int)random(100) + 125;
+      x = (float)((int)random(2000) + 50);  y = (float)(-1 * 20);  vx = random(0.1) + 0.1;  vy = random(1) + 0.5;  v = (float)((int)random(100) + 125);
       snow_draw();
       return;
     }    
