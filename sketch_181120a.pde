@@ -112,11 +112,11 @@ class Wafers
   }
   public void change_color(int temp_c, int c_p) {
     if(c_p == 0)
-      base_c = 12;
+      base_c = (int)((temp_c - 50) / 100);
     if(c_p == 1)
-      cream1_c = ((temp_c - 50) / 100);
+      cream1_c = (int)((temp_c - 50) / 100);
     if(c_p == 2)
-      cream2_c = ((temp_c - 50) / 100);
+      cream2_c = (int)((temp_c - 50) / 100);
   }
   public float fb(float xt){
     return k * (xt - m);
