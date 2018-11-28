@@ -172,8 +172,8 @@ class Button extends Point
     fill(0);    arc(1850, 951, 50, 50, (float)3 / 4 * PI, (float)9 / 4 * PI);
     fill(255);    ellipse(1850, 951, 35, 35);
     fill(0);
-    pushMatrix();  /*translate(1850, 951);  rotate((float)-1 / 4 * PI);*/
-    /*triangle(-21.25, 10.0, -31.25, 0.0, -11.25, 0.0);*/  popMatrix();
+    pushMatrix();  translate(1850.0, 951.0);  rotate((float)-1 / 4 * PI);
+    triangle(-21.25, 10.0, -31.25, 0.0, -11.25, 0.0);  popMatrix();
   }
   public void press_check(int temp_x)
   {
