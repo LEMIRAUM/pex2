@@ -218,7 +218,7 @@ class Snow
   float x, y, vx, vy, v, r;
   
   public Snow() {
-    x = (float)((int)random(2000) + 50);  y = (float)(-1 * 20);  vx = random(0.5) + 0.1;  vy = random(1) + 0.5;  v = (float)((int)random(100) + 125);  r = (float)((int)random(10) + 20);
+    x = (int)random(2000) + 50;  y = -20;  vx = random(0.5) + 0.1;  vy = random(1) + 0.5;  v = (int)random(100) + 125;  r = (int)random(10) + 20;
   }
   public void snow_draw()
   {
@@ -228,7 +228,7 @@ class Snow
   public void move()
   {
     if(y > 1085) {
-      x = (float)((int)random(2000) + 50);  y = (float)(-1 * 20);  vx = random(0.1) + 0.1;  vy = random(1) + 0.5;  v = (float)((int)random(100) + 125);
+      x = (int)random(2000) + 50;  y = -20;  vx = random(0.1) + 0.1;  vy = random(1) + 0.5;  v = (int)random(100) + 125;
       snow_draw();
       return;
     }    
