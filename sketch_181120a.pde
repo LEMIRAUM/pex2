@@ -173,7 +173,7 @@ class Button extends Point
     fill(255);    ellipse(1850, 951, 35, 35);
     fill(0);
     pushMatrix();  translate(1850, 951);  rotate((float)-1 / 4 * PI);
-    triangle(-21.25, 10, -31.25, 0, -11.25, 0);  popMatrix(); 
+    triangle((float)-21.25, 10, (float)-31.25, 0, (float)-11.25, 0);  popMatrix(); 
   }
   public void press_check(int temp_x)
   {
