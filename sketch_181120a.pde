@@ -138,9 +138,10 @@ class Wafers
 class Point
 {
   int x, y;
+  float xa, xb, xc;
   public int current_point;
   public Point() {
-    x = 190;  y = 620;  current_point = 0;
+    x = 190;  y = 620;  current_point = 0;  xa = -21.25;  xb = -31.25;  xc = -11.25
   }
   public void pointdraw()
   {
@@ -173,7 +174,7 @@ class Button extends Point
     fill(255);    ellipse(1850, 951, 35, 35);
     fill(0);
     pushMatrix();  translate(1850, 951);  rotate((float)-1 / 4 * PI);
-    triangle((float)(-1 * 21.25), 10, (float)(-1 * 31.25), 0, (float)(-1 * 11.25), 0);  popMatrix(); 
+    triangle(xa, 10, xb, 0, xc, 0);  popMatrix(); 
   }
   public void press_check(int temp_x)
   {
