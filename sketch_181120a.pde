@@ -21,7 +21,7 @@ class Color_box
   }
   public void colorChange(int temp_c)
   {
-    r = color_list[(temp_c - 50) / 100][0];  g = color_list[(temp_c - 50) / 100][1];  b = color_list[(temp_c - 50) / 100][2];
+    r = color_list[(int)((temp_c - 50) / 100)][0];  g = color_list[(int)((temp_c - 50) / 100)][1];  b = color_list[(int)((temp_c - 50) / 100)][2];
   }
 }
 
